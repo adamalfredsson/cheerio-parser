@@ -1,0 +1,21 @@
+{
+  "name": "cheerio-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "dedent": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/dedent": "^0.7.0",
+    "typescript": "^5.1.6",
+    "vitest": "^0.33.0"
+  }
+}
