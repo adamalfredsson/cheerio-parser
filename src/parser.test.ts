@@ -4,11 +4,11 @@ import { parse } from "./parser";
 describe("parse", () => {
   it("should parse the content to a tree", () => {
     const html = dedent`
-      <h2>Heading 1</h2>
+      <h1>Heading 1</h1>
       This is a paragraph below the main heading.
-      <h2>Heading 2</h2>
+      <h1>Heading 2</h1>
       This is a paragraph below the second heading.
-      <h3>Subheading 2.1</h3>
+      <h2>Subheading 2.1</h2>
       This is a paragraph below the nested subheading.
     `;
 
