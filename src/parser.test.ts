@@ -4,7 +4,7 @@ import { parse } from "./parser";
 describe("parse", () => {
   it("should parse the content to a tree", () => {
     const html = dedent`
-      <h2>Heading 1</h1>
+      <h2>Heading 1</h2>
       This is a paragraph below the main heading.
       <h2>Heading 2</h2>
       This is a paragraph below the second heading.
@@ -179,7 +179,7 @@ describe("parse", () => {
           <h2>Subheading 1</h2>
           <p>Content for first subheading.</p>
         </section>
-        <section id="section-2>
+        <section id="section-2">
           <p>Content before second subheading.</p>
           <h2 id="subheading-2">Subheading 2</h2>
           <p>Content for second subheading.</p>
@@ -273,6 +273,8 @@ describe("parse", () => {
                   anchor: undefined,
                   content: dedent`
                     This is a paragraph below the nested subheading.
+                    - Item 1
+                    - Item 2
                   `,
                   children: [],
                 },
