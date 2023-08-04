@@ -48,7 +48,7 @@ export function parse(html: string): { content?: string; nodes: Node[] } {
       lastNodes.push(node);
     } else {
       const text = turndownService.turndown($el.html() || "");
-      console.log($el.is("p"), "     ",text.includes('Bare Text'))
+
       if (text && lastNodes.length > 0) {
         const lastNode = lastNodes[lastNodes.length - 1];
         if (text && lastNode !== undefined) {
