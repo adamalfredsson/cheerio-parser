@@ -8,7 +8,7 @@ interface Node {
   children: Node[];
 }
 
-function parse(html: string): { content?: string; nodes: Node[] } {
+export function parse(html: string): { content?: string; nodes: Node[] } {
   const $ = cheerio.load(html);
   let nodes: Node[] = [];
   let lastNodes: Node[] = [];
@@ -83,5 +83,3 @@ function parse(html: string): { content?: string; nodes: Node[] } {
 
   return { content, nodes };
 }
-
-export { parse };
