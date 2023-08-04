@@ -158,8 +158,8 @@ describe("parse", () => {
             {
               title: "Subheading 1",
               content: dedent`
-                - Item 1
-                - Item 2
+                *   Item 1
+                *   Item 2
               `,
               anchor: undefined,
               children: [],
@@ -241,11 +241,9 @@ describe("parse", () => {
             <li>Item 2</li>
           </ul>
         </section>
-        
-        <p>
+
           <h2 id="subheading-2">Subheading 2</h2>
-          Bare text
-        </p>
+          <p>Bare text</p>
         
         <p>This is a paragraph <strong>below</strong> the second subheading.</p>
       </main>
@@ -273,8 +271,8 @@ describe("parse", () => {
                   anchor: undefined,
                   content: dedent`
                     This is a paragraph below the nested subheading.
-                    - Item 1
-                    - Item 2
+                    *   Item 1
+                    *   Item 2
                   `,
                   children: [],
                 },
